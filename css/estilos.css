@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.header{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid rgb(121, 248, 221);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    z-index: 100;
+    /* box-shadow:  0 0 20px 0 white; */
+}
+.h2{
+    font-weight: 400;
+    color: rgb(5, 110, 100);
+}
+.nav{
+    width: 380px;
+}
+.ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ul > li{
+    list-style: none;
+    color: rgb(3, 83, 75);
+    cursor: pointer;
+    font-size: 0.95em;
+}
+select{
+    padding: .1em .1em;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(1, 46, 42);
+}
+.button{
+    padding: .5em 1em;
+    color: rgb(100,255,240);
+    background-color: rgb(19, 121, 216);
+    border: none;
+    outline: none;
+    font-size: 0.95em;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.button:hover{
+    background-color: rgb(3, 96, 184);
+    transition: all .3s ease;
+}
+
+/* estilso de mensage de libros nulos */
+.mensajeVacio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    height: 40vh;
+    background-color:rgb(248, 241, 241);
+    color: rgb(6, 90, 79);
+    font-size: 2em;
+    padding: 0 1em;
+}
+
+/* Formulario */
+.cont-form{
+    display: none;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    margin-top: 50px;
+}
+.form{
+    width: 100%;
+    min-height: calc(100vh - 55px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1em;
+}
+.campo{
+    width: 100%;
+    padding: 1.5em 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.itemCampo{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.itemCampo:nth-child(2){
+    margin-left: 3em;
+}
+.itemCampo > label{
+    margin: .5em 0;
+}
+.itemCampo> input{
+    padding: .3em .5em;
+    font-size: 1.05em;
+    outline: none;
+    border: 1px solid rgb(12, 146, 128);
+}
+.campoText{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1em;
+}
+.campoText > textarea{
+    width: 80%;
+    height: 70%;
+    max-width: 90%;
+    min-height: 100px;
+    min-width: 75%;
+    padding: .5em;
+    outline: none;
+    border: 1px solid rgb(12, 146, 128);
+}
+.campo>button{
+    font-size: 1em;
+    padding: .6em 1.5em;
+    background-color: rgb(252, 66, 66);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(245, 247, 246);
+    margin: 0 .2em;
+    border-radius: 3px;
+    transition: all .3s ease;
+}
+.campo>button:hover{
+    transition: all .3s ease;
+    background-color: rgb(230, 36, 36);
+}
+.cant{
+    width: 26%;
+}
+.genero{
+    display: inline-block;
+    margin-top: 2.1em;
+    margin-left: .3em;
+    padding: .24em .6em;
+    border: 1px solid rgb(4, 160, 121);
+}

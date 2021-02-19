@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="img/digital.png">
+        <link rel="stylesheet" href="css/estilos-libros.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <title>Biblioteca Virutal</title>
+    </head>
+    <body>
+        <div class="header">
+            <div><h2 class="h2">Biblioteca Virtual</h2></div>
+            <nav class="nav">
+                <ul class="ul">
+                    <li id="home">Home</li>
+                    <li id="contact">Contact</li>
+                    <li>Ver<select id="category"></select></li>
+                    <li><button type="button" class="button" id="btnAgregar">Agregar</button></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="cont-form" id="contForm">
+            <form class="form" id="form" autocomplete="off">
+                <div class="campo">
+                    <div class="itemCampo">
+                        <label for="nombre">Nombre del Libro</label>
+                        <input type="text" id="nombre" placeholder="nombre del libro">
+                    </div>
+                    <div class="itemCampo">
+                        <label for="autor">Autor</label>
+                        <input type="text" id="autor" placeholder="autor">
+                    </div>
+                </div>
+                <div class="campo">
+                    <div class="itemCampo">
+                        <label for="precio">Precio unitario</label>
+                        <input type="number" id="precio" placeholder="precio unitario">
+                    </div>
+                    <div class="itemCampo cant">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" id="cantidad" placeholder="cantidad">
+                    </div>
+                    <div class="genero" id="genero">
+                        <select  id="select2"></select>
+                    </div>
+                </div>
+                <div class="campoText">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" placeholder="Escriba una breve descripcion"></textarea>
+                </div>
+                <div class="campo">
+                    <button type="submit">Subir Libro</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedor" id="contenedor"></div>
+
+        <script src="funcionalidad.js"></script>
+        <!-- Texto para probar en el formulario
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi aspernatur corporis doloremque eligendi? Ex ab impedit corporis neque architecto accusantium nobis facilis, doloribus unde fugit accusamus, omnis amet exercitationem.Rerum nisi impedit veniam magnam error unde, quaerat repellat voluptatum amet laboriosam aspernatur, labore asperiores, eum delectus molestias ipsam est corrupti. Temporibus doloribus perspiciatis quibusdam quae! Accusantium possimus deleniti iusto. 
+        -->
+    </body>
+</html>

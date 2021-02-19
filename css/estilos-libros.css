@@ -1,0 +1,105 @@
+/* Muro de libros */
+.contenedor{
+    margin-top: 1em;
+    width: 100%;
+    min-height: calc(100vh - 55px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3em;
+    background-color: rgb(248, 249, 249);
+}
+
+.book{
+    position: relative;
+    width: 90%;
+    max-width: 620px;
+    min-height: 250px;
+    border: 1px solid rgb(202, 238, 234);
+    padding: 1em;
+    margin: 2em 0;
+    box-sizing: border-box;
+}
+.libro-name{
+    font-size: 1.6em;
+    padding: .2em 0;
+    width: 70%;
+    display: inline-block;
+}
+.autor{
+    font-size: 1.1em;
+    color: rgb(105, 62, 5);
+}
+.descripcion{
+    width: 100%;
+    font-size: 1em;
+    padding: .3em 0;
+    margin: .4em 0;
+    letter-spacing: .5px;
+    padding-right: .2em;
+    color: rgb(35, 35, 77);
+}
+.precio{
+    display: inline-block;
+    padding: .3em 1em;
+    background-color: rgb(247, 182, 99);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-bottom: .2em;
+}
+.precio:hover{
+    transition: all .3s ease;
+    background-color: rgb(240, 153, 39);
+}
+.cantidad{
+    display: inline-block;
+    padding: .36em .6em;
+    font-size: .95em;
+    background-color: rgb(86, 128, 255);
+    color: rgb(255, 255, 255);
+    margin-left: .5em;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.cantidad:hover{
+    background-color: rgb(41, 106, 247);
+    transition: all .3s ease;
+}
+.genero-libro{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: inline-block;
+    color: rgb(4, 94, 67);
+    padding-top: .3em;
+}
+.book > button{
+    font-size: 0.95em;
+    padding: .36em 1em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 88, 88);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all .3s ease;
+    margin-left: .4em;
+}
+.book>button:hover{
+    transition: all .3s ease;
+    background-color: rgb(255, 56, 56);
+}
+.color2{
+    background-color: rgb(10, 168, 108);
+    color: rgb(248, 249, 249);
+    letter-spacing: .5px;
+    padding: .36em 1em;
+    transition: all .3s ease;
+}
+.color2:hover{
+    transition: all .3s ease;
+    background-color: rgb(13, 105, 70);
+}
